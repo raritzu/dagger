@@ -156,7 +156,7 @@ javadoc_library(
         "//java/dagger/producers:producers-srcs",
         "//java/dagger/spi:spi-srcs",
     ],
-    android_api_level = 26,
+    android_api_level = 23,
     # TODO(ronshapiro): figure out how to specify the version number for release builds
     doctitle = "Dagger Dependency Injection API",
     exclude_packages = [
