@@ -187,5 +187,10 @@ public final class ProxyServerCallHandler<RequestT, ResponseT>
     public boolean isCancelled() {
       return delegate.isCancelled();
     }
+
+    @Override
+    public void setCompression(String s) {
+      delegate.setCompression(s);
+    }
   }
 }
