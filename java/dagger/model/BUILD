@@ -56,6 +56,7 @@ java_library(
     name = "internal-proxies",
     srcs = INTERNAL_PROXIES,
     tags = ["maven:merged"],
+    javacopts = ["-Xep:BetaApi:OFF"],
     deps = [
         ":model",
         "@google_bazel_common//third_party/java/guava",

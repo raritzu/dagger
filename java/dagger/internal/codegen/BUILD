@@ -470,7 +470,7 @@ java_library(
     name = "check-package-javadoc",
     testonly = 1,
     srcs = CODEGEN_SRCS,
-    javacopts = DOCLINT_HTML_AND_SYNTAX + DOCLINT_REFERENCES,
+    javacopts = DOCLINT_HTML_AND_SYNTAX + DOCLINT_REFERENCES + ["-Xep:BetaApi:OFF"],
     plugins = CODEGEN_PLUGINS,
     deps = CODEGEN_DEPS + [
         "//java/dagger/internal/codegen/langmodel",
